@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,600;1,900&display=swap");
+@import url("https://rsms.me/inter/inter.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+@font-face {
+  font-family: "Sector034";
+  src: url("/fonts/sector_034.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Neuropol";
+  src: url("/fonts/neuropol.otf") format('opentype');
+}
+
+.app {
+  @apply relative w-full h-screen overflow-scroll bg-black;
+}
+
+.home {
+  @apply w-full h-full flex justify-start items-start flex-col overflow-hidden;
+}
+
+.main {
+  @apply w-full h-full flex justify-start items-start flex-col absolute z-10 overflow-hidden bg-black/50;
+}
+
+.row-t {
+  @apply flex w-full h-4;
+}
+
+.row-b {
+  @apply flex w-full h-4;
+}
+
+.col-l {
+  @apply flex flex-col w-4 divide-y divide-gray-300
+}
+
+.col-m {
+  @apply flex-1 flex-col divide-y divide-gray-300
+}
+
+.col-r {
+  @apply flex flex-col w-4 divide-y divide-gray-300
+}
+
+.top-l {
+  @apply h-4 w-4;
+}
+
+.top-m {
+  @apply flex-1 h-4;
+}
+
+.top-r {
+  @apply h-4 w-4;
+}
+
+.video-container {
+  @apply w-full h-full flex justify-start items-start flex-col absolute overflow-hidden;
+}
+
+.bg-video {
+  @apply absolute top-0 left-0 w-full h-full;
+}
+
+/* .navbar {
+  @apply w-full h-[12.5%] flex flex-row border-b border-white;
+} */
+
+.navbar {
+  @apply flex flex-row p-4;
+}
+
+.navbar-links {
+  @apply w-[37.5%] flex flex-row justify-start items-center px-8 gap-8 border-r border-white;
+}
+
+.other-links {
+  @apply w-[50%] flex flex-row justify-start items-center;
+}
+
+.link {
+  @apply font-[Inter] text-white text-xs;
+}
+
+.logo-container {
+  @apply flex w-[12.5%] h-full justify-center items-center bg-white gap-1;
+}
+
+.logo-1 {
+  @apply font-[Inter] text-white text-sm;
+}
+
+.logo-2 {
+  @apply font-[Inter] text-white text-sm bg-red-600 px-2;
+}
+
+.button-header {
+  @apply bg-cyan-800 hover:bg-cyan-400 px-6 py-2;
+}
+
+.row {
+  @apply w-full h-[37.5%] flex flex-row border-b border-white;
+}
+
+.sidebar {
+  @apply w-[12.5%] h-full flex flex-row border-r border-white;
+}
+
+.section {
+  @apply w-[37.5%] h-full flex flex-row border-r border-white;
+}
+
+.square-l {
+  @apply w-[25%] h-full flex flex-row border-r border-white;
+}
+
+.square-r {
+  @apply w-[25%] h-full flex-row flex;
+}
+
+.cut-br {
+  @apply [clip-path:polygon(0%_0,100%_0,100%_calc(100%-10px),calc(100%-10px)_100%,0_100%,0_10px)];
+}
+
+.button-text {
+  @apply font-[Inter] text-xs text-black px-3;
+}
+
+.corner-tl {
+  @apply h-[8px] w-[8px] border-t-2 border-l-2 border-cyan-400 top-0 left-0;
+}
+
+.corner-tr {
+  @apply h-[8px] w-[8px] border-t-2 border-r-2 border-cyan-400 top-0 right-0;
+}
+
+.corner-bl {
+  @apply h-[8px] w-[8px] border-b-2 border-l-2 border-cyan-400 bottom-0 left-0;
+}
+
+.corner-br {
+  @apply h-[8px] w-[8px] border-b-2 border-r-2 border-cyan-400 bottom-0 right-0;
+}
+
+.row {
+  @apply flex flex-row justify-between;
+}
+
+.home-content {
+  @apply max-w-lg justify-start flex flex-col gap-10 py-24 px-10;
+}
+
+.head-text {
+  @apply text-[4rem] leading-[5rem] font-[Neuropol] text-white;
+}
+
+.button-main {
+  @apply flex flex-row border-2 border-neutral-600 outline outline-offset-2 outline-neutral-400 -skew-x-[45deg];
+}
+
+.skew-l {
+  @apply h-[16px] w-[48px] border-t-2 border-l-2 border-white -ml-3.5 -mt-3;
+}
+
+.skew-r {
+  @apply h-[24px] w-[48px] border-r-2 border-white -mr-3.5;
+}
+
+.button-main-text {
+  @apply font-[Inter] text-base text-white skew-x-[45deg];
+}
+
+.download-btn {
+  @apply w-14 h-14 flex justify-center items-center rounded-full glassmorphism cursor-pointer outline-none;
+}
+
+.editortabs-container {
+  @apply glassmorphism w-16 border-[2px] rounded-lg flex flex-col justify-center items-center ml-1 py-4 gap-4;
+}
+
+.filtertabs-container {
+  @apply absolute z-10 bottom-5 right-0 left-0 w-full flex justify-center items-center flex-wrap gap-4;
+}
+
+.aipicker-container {
+  @apply absolute left-full ml-3 glassmorphism p-3 w-[195px] h-[220px] rounded-md flex flex-col gap-4;
+}
+
+.aipicker-textarea {
+  @apply w-full bg-transparent text-sm border border-gray-300 p-2 outline-none flex-1;
+}
+
+.filepicker-container {
+  @apply absolute left-full ml-3 glassmorphism p-3 w-[195px] h-[220px] flex flex-col rounded-md;
+}
+
+.filepicker-label {
+  @apply border border-gray-300 py-1.5 px-2 rounded-md shadow-sm text-xs text-gray-700 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 cursor-pointer w-fit;
+}
+
+.tab-btn {
+  @apply w-14 h-14 flex justify-center items-center cursor-pointer select-none;
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 2px 30px 0 rgba(31, 38, 135, 0.07);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+input[type="file"] {
+  z-index: -1;
+  position: absolute;
+  opacity: 0;
+}
+
+.sketch-picker {
+  width: 170px !important;
+  background: rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 2px 30px 0 rgba(31, 38, 135, 0.07) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  border-radius: 6px !important;
+}
+
+.sketch-picker > div:nth-child(3) {
+  display: none !important;
+}
