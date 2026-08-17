@@ -3,6 +3,9 @@ import Typewriter from './../components/typewriter';
 import './../index.css'; // Make sure to import your CSS file
 import { useTranslation } from 'react-i18next';
 import LanguageSelector from '../components/languageSelector';
+import github from '../../public/icons/github.png';
+import linkedin from '../../public/icons/linkedin.png';
+import hero from '../../public/images/hero.png';
 
 const Home = () => {
 
@@ -32,14 +35,14 @@ const Home = () => {
           </div> */}
           <button className="button-circle">
             <img
-              src="/public/github.png"
+              src={github}
               width="20"
               height="20"
             />
           </button>
           <button className="button-circle">
             <img
-              src="/public/linkedin.png"
+              src={linkedin}
               width="20"
               height="20"
             />
@@ -65,7 +68,7 @@ const Home = () => {
             <button className='button-main'>{t("cta_title")}</button>
           </div>
           <img
-            src="/public/hero.png"
+            src={hero}
             width="512"
             height="512"
           />
