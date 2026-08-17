@@ -26,15 +26,85 @@ html {
 }
 
 .app {
-  @apply relative w-full h-screen overflow-scroll bg-black;
+  @apply relative w-full h-screen overflow-scroll bg-neutral-50;
 }
 
 .home {
   @apply w-full h-full flex justify-start items-start flex-col overflow-hidden;
 }
 
+.navbar {
+  @apply flex flex-row w-full items-center justify-center px-16 py-6;
+}
+
+.navbar-links {
+  @apply flex flex-1 flex-row items-center justify-center space-x-16;
+}
+
+.social-links {
+  @apply flex flex-1 flex-row items-center justify-end space-x-6;
+}
+
+.name-container {
+  @apply flex flex-1 flex-row items-center justify-start space-x-4;
+}
+
+.avatar {
+  @apply rounded-full;
+}
+
+.name {
+  @apply text-lg text-slate-900;
+}
+
+.link {
+  @apply text-sm text-slate-900;
+}
+
+.button-circle {
+  @apply flex items-center justify-center p-2 rounded-full bg-slate-900 hover:bg-sky-500;
+}
+
 .main {
-  @apply w-full h-full flex justify-start items-start flex-col absolute z-10 overflow-hidden bg-black/50;
+  @apply w-full h-full flex justify-start items-start flex-col z-10 overflow-scroll bg-neutral-50;
+}
+
+.hero {
+  @apply w-full h-screen flex flex-row items-center justify-center;
+}
+
+.hero-text {
+  @apply flex flex-col items-start justify-start ml-16 max-w-2xl space-y-6;
+}
+
+.title {
+  @apply text-7xl text-slate-900 font-semibold;
+}
+
+.subtitle {
+  @apply text-xl text-neutral-900;
+}
+
+.body {
+  @apply text-base text-slate-900;
+}
+
+.button-main {
+  @apply flex text-base text-white justify-center items-center px-6 py-2 mr-auto bg-slate-900 hover:bg-sky-500;
+}
+
+.typewriter-text {
+  @apply text-sky-500;
+}
+
+.typewriter-cursor {
+  animation: blink 1s step-end infinite;
+  display: inline; /* Ensure it stays in line with the text */
+}
+
+@keyframes blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 .row-t {
@@ -81,20 +151,8 @@ html {
   @apply w-full h-[12.5%] flex flex-row border-b border-white;
 } */
 
-.navbar {
-  @apply flex flex-row p-4;
-}
-
-.navbar-links {
-  @apply w-[37.5%] flex flex-row justify-start items-center px-8 gap-8 border-r border-white;
-}
-
 .other-links {
   @apply w-[50%] flex flex-row justify-start items-center;
-}
-
-.link {
-  @apply font-[Inter] text-white text-xs;
 }
 
 .logo-container {
@@ -169,9 +227,9 @@ html {
   @apply text-[4rem] leading-[5rem] font-[Neuropol] text-white;
 }
 
-.button-main {
+/* .button-main {
   @apply flex flex-row border-2 border-neutral-600 outline outline-offset-2 outline-neutral-400 -skew-x-[45deg];
-}
+} */
 
 .skew-l {
   @apply h-[16px] w-[48px] border-t-2 border-l-2 border-white -ml-3.5 -mt-3;
