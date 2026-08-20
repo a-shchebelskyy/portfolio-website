@@ -26,7 +26,7 @@ html {
 }
 
 .app {
-  @apply relative w-full h-screen overflow-scroll bg-neutral-50;
+  @apply relative w-full h-screen overflow-scroll bg-neutral-100;
 }
 
 .home {
@@ -34,7 +34,7 @@ html {
 }
 
 .navbar {
-  @apply flex flex-row w-full items-center justify-center px-16 py-6;
+  @apply flex sticky top-0 flex-row w-full items-center justify-center px-16 py-6 bg-neutral-50;
 }
 
 .navbar-links {
@@ -58,7 +58,11 @@ html {
 }
 
 .link {
-  @apply text-sm text-slate-900;
+  @apply text-sm text-slate-900 hover:text-sky-500;
+}
+
+.link-arrow {
+  @apply flex flex-row text-base text-slate-900 space-x-1 hover:space-x-3 hover:text-sky-500 duration-300 ease-in-out;
 }
 
 .button-circle {
@@ -66,23 +70,31 @@ html {
 }
 
 .main {
-  @apply w-full h-full flex justify-start items-start flex-col z-10 overflow-scroll bg-neutral-50;
+  @apply w-full min-h-screen flex justify-start items-start flex-col px-16 pt-24 pb-6 space-y-6 z-10 overflow-scroll bg-neutral-100;
+}
+
+.wide {
+  @apply w-full;
 }
 
 .hero {
-  @apply w-full h-screen flex flex-row items-center justify-center;
+  @apply w-full flex flex-row items-center justify-start space-x-16;
 }
 
 .hero-text {
-  @apply flex flex-col items-start justify-start ml-16 max-w-2xl space-y-6;
+  @apply flex flex-col items-start justify-start max-w-2xl space-y-6;
+}
+
+.hero-body {
+  @apply text-base text-slate-900 max-w-xl;
 }
 
 .title {
-  @apply text-7xl text-slate-900 font-semibold;
+  @apply text-6xl text-slate-900 font-semibold;
 }
 
 .subtitle {
-  @apply text-xl text-neutral-900;
+  @apply text-4xl text-neutral-900 font-semibold;
 }
 
 .body {
@@ -90,7 +102,7 @@ html {
 }
 
 .button-main {
-  @apply flex text-base text-white justify-center items-center px-6 py-2 mr-auto bg-slate-900 hover:bg-sky-500;
+  @apply flex text-base text-white justify-center items-center px-6 py-2 mr-auto rounded-full bg-slate-900 hover:bg-sky-500;
 }
 
 .typewriter-text {
@@ -106,6 +118,76 @@ html {
   from, to { opacity: 1; }
   50% { opacity: 0; }
 }
+
+.projects-row {
+  @apply flex flex-row w-full items-center justify-between space-x-6;
+}
+
+.project-card {
+  @apply flex flex-col w-[256px] h-[192px] bg-neutral-200;
+}
+
+.input-row {
+  @apply flex flex-row w-full items-center justify-start space-x-6;
+}
+
+.input-container {
+  @apply flex flex-col items-start justify-start space-y-2;
+}
+
+.input-label {
+  @apply text-sm;
+}
+
+.input-field {
+  @apply flex border px-3 py-2 border-neutral-500 rounded-lg;
+}
+
+.input-area {
+  @apply flex w-full border px-3 py-2 border-neutral-500 rounded-lg;
+}
+
+.services-container {
+  @apply flex flex-col w-full space-y-6;
+}
+
+.services-row {
+  @apply flex flex-row items-center justify-between;
+}
+
+.service-card {
+  @apply flex w-[200px] h-[164px] flex-col items-center justify-between p-4  border rounded-lg;
+}
+
+.unselected {
+  @apply border border-neutral-500 bg-neutral-50 hover:bg-neutral-200;
+}
+
+.selected {
+  @apply border border-sky-500 bg-sky-200 hover:bg-rose-200;
+}
+
+.service-label {
+  @apply text-sm;
+}
+
+.footer {
+  @apply flex flex-row items-center justify-between p-6 bg-neutral-200;
+}
+
+.email-button {
+  @apply flex flex-row items-center justify-center space-x-2 text-base font-semibold;
+}
+
+.footer-socials {
+  @apply flex flex-row items-center justify-center space-x-2;
+}
+
+.footer-link {
+  @apply text-base text-black hover:text-sky-500;
+}
+
+
 
 .row-t {
   @apply flex w-full h-4;

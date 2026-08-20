@@ -1,6 +1,6 @@
 {
     "name": "Alexander Shchebelskyy",
-    "about": "About",
+    "about": "About Me",
     "projects": "Projects",
     "contact": "Contact",
     "hero_let": "Let",
@@ -9,6 +9,6 @@
     "hero_app": "Your App",
     "hero_tech": "Your Tech",
     "hero_dream": "Your Dream",
-    "hero_subtitle": "Full-stack development focused on performance, clarity, and long-term maintainability.",
+    "hero_subtitle": "Full-stack developer focused on web applications, mobile apps, SaaS products, and specialized software from concept to deployment.",
     "cta_title": "VIEW MY WORK"
 }
