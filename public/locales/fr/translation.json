@@ -10,5 +10,37 @@
     "hero_tech": "Votre Technologie",
     "hero_dream": "Votre Rêve",
     "hero_subtitle": "Développeur full-stack spécialisé dans les applications web, les applications mobiles, les produits SaaS et les logiciels spécialisés, de la conception au déploiement.",
-    "cta_title": "VOIR MON TRAVAIL"
+    "cta_title": "VOIR MON TRAVAIL",
+
+    "form_name": "Nom",
+    "form_name_placeholder": "Votre nom",
+    "form_email": "Adresse e-mail",
+    "form_email_placeholder": "vous@example.com",
+    "form_service_label": "Choisissez des services",
+    "design": "Conception de produit",
+    "webapp": "Application web",
+    "mobile": "Application mobile",
+    "ai": "Application basée sur l'IA",
+    "other": "Autre",
+    "form_desc_label": "Que développez-vous ?",
+    "form_desc_placeholder": "Description de votre projet, idée ou problème...",
+    "form_budget": "Budget",
+    "budget_options": {
+        "0": "<€1 000",
+        "1": "€1 000-5 000",
+        "2": "€5 000-10 000",
+        "3": ">€10 000",
+        "4": "Pas sûr"
+    },
+    "form_timeline": "Date d'échéance",
+    "timeline_options": {
+        "0": "<1 mois",
+        "1": "1-6 mois",
+        "2": "6-12 mois",
+        "3": ">12 mois",
+        "4": "Flexible / Pas de date limite",
+        "5": "Pas sûr"
+    },
+    "submit_text": "SOUMETTRE",
+    "success_text": "Merci pour votre demande ! Je m'efforcerai de vous répondre dans 24 heures."
 }

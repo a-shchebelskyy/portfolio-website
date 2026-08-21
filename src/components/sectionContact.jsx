@@ -6,6 +6,7 @@ import application from '../../public/icons/application.png';
 import appstore from '../../public/icons/app-store.png';
 import chatgpt from '../../public/icons/chatgpt.png';
 import more from '../../public/icons/more.png';
+import checkmark from '../../public/icons/check-mark.png';
 
 const serviceOptions = [
   {
@@ -52,6 +53,10 @@ const budgetOptions = [
     id: 3,
     range: ">$10,000"
   },
+  {
+    id: 4,
+    range: "Not sure"
+  },
 ];
 
 const timelineOptions = [
@@ -71,27 +76,25 @@ const timelineOptions = [
     id: 3,
     range: ">12 months"
   },
+  {
+    id: 4,
+    range: "Flexible / No Deadline"
+  },
+  {
+    id: 5,
+    range: "Not sure"
+  },
 ];
 
 const Contact = () => {
-  const { t } = useTranslation();
+  const { i18n, t } = useTranslation();
+  const [ submitted, setSubmitted ] = useState(false);
   const [ name, setName ] = useState("");
   const [ email, setEmail ] = useState("");
   const [ selectedServices, setSelectedServices ] = useState([]);
   const [ desc, setDesc ] = useState("");
   const [ budget, setBudget ] = useState(0);
   const [ timeline, setTimeline ] = useState(0);
-
-  // const handleServicePress = (e) => {
-  //   let newServiceList = selectedServices;
-  //   const selectedService = e.currentTarget.id;
-  //   if (selectedServices.includes(selectedService)) {
-  //     newServiceList.filter(item => item !== selectedService)
-  //   } else {
-  //     newServiceList.push(selectedService);
-  //   }
-  //   setSelectedServices(newServiceList);
-  // };
 
   const handleToggleService = (service) => {
     setSelectedServices((prev) =>
@@ -114,6 +117,7 @@ const Contact = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData();
+    formData.append("lang", i18n.language)
     formData.append("name", name);
     formData.append("email", email);
     formData.append("services", selectedServices);
@@ -122,8 +126,6 @@ const Contact = () => {
     formData.append("timeline", timelineOptions[timeline].range);
     formData.append("access_key", "58dafa63-3afb-44d9-b934-d57747ef845a");
 
-    //console.log(Object.fromEntries(formData));
-
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       body: formData
@@ -131,6 +133,7 @@ const Contact = () => {
 
     const data = await response.json();
     console.log(data.success ? "Success!" : "Error");
+    setSubmitted(true);
   };
 
   return (
@@ -138,97 +141,107 @@ const Contact = () => {
       <h2 className='subtitle'>
         {t("contact")}
       </h2>
-      <div className="input-row">
-        <div className="input-container">
-          <p className="input-label">Name</p>
-          <input 
-            id="name"
-            type="text"
-            className="input-field"
-            placeholder="Your name"
-            value={name}     // 3. Bind input value to state
-            onChange={(e) => setName(e.target.value)} // 4. Attach change handler
-          />
+      {!submitted ? (
+      <div className="form">
+        <div className="input-row">
+          <div className="input-container">
+            <p className="input-label">{t("form_name")}</p>
+            <input 
+              id="name"
+              type="text"
+              className="input-field"
+              placeholder={t("form_name_placeholder")}
+              value={name}     // 3. Bind input value to state
+              onChange={(e) => setName(e.target.value)} // 4. Attach change handler
+            />
+          </div>
+          <div className="input-container">
+            <p className="input-label">{t("form_email")}</p>
+            <input 
+              id="email"
+              type="text"
+              className="input-field"
+              placeholder={t("form_email_placeholder")}
+              value={email}     // 3. Bind input value to state
+              onChange={(e) => setEmail(e.target.value)} // 4. Attach change handler
+            />
+          </div>
         </div>
-        <div className="input-container">
-          <p className="input-label">E-mail</p>
-          <input 
-            id="email"
-            type="text"
-            className="input-field"
-            placeholder="you@example.com"
-            value={email}     // 3. Bind input value to state
-            onChange={(e) => setEmail(e.target.value)} // 4. Attach change handler
-          />
+        <div className="services-container">
+          <p className="input-label">{t("form_service_label")}</p>
+          <div className="services-row">
+            {serviceOptions.map((service, key) => (
+              <button 
+                id={service.id} 
+                key={key}
+                className={`service-card ${selectedServices.includes(service.id) ? 'selected' : 'unselected'}`} 
+                onClick={() => handleToggleService(service.id)}
+              >
+                <p className="service-label">{t(service.id)}</p>
+                <img src={service.icon} width="94" height="94" />
+              </button>
+              ))}
+          </div>
         </div>
-      </div>
-      <div className="services-container">
-        <p className="input-label">Choose a Service</p>
-        <div className="services-row">
-          {serviceOptions.map((service, key) => (
-            <button 
-              id={service.id} 
-              key={key}
-              className={`service-card ${selectedServices.includes(service.id) ? 'selected' : 'unselected'}`} 
-              onClick={() => handleToggleService(service.id)}
+        <div className="input-row">
+          <div className="input-container wide">
+            <p className="input-label">{t("form_desc_label")}</p>
+            <textarea
+              id="description"
+              className="input-area"
+              value={desc}
+              onChange={(e) => setDesc(e.target.value)}
+              rows={5} // Sets the initial visible height in text rows
+              placeholder={t("form_desc_placeholder")}
+            />
+          </div>
+        </div>
+        <div className="input-row">
+          <div className="input-container">
+            <p className="input-label">{t("form_budget")}</p>
+            <select
+              id="budget"
+              value={budget}
+              onChange={handleChangeBudget}
+              className="input-field"
             >
-              <p className="service-label">{service.name}</p>
-              <img src={service.icon} width="94" height="94" />
-            </button>
-            ))}
+              {budgetOptions.map(({ id, range }, key) => (
+                <option value={id} key={key}>
+                  {t(`budget_options.${key}`)}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="input-container">
+            <p className="input-label">{t("form_timeline")}</p>
+            <select
+              id="timeline"
+              value={timeline}
+              onChange={handleChangeTimeline}
+              className="input-field"
+            >
+              {timelineOptions.map(({ id, range }, key) => (
+                <option value={id} key={key}>
+                  {t(`timeline_options.${key}`)}
+                </option>
+              ))}
+            </select>
+          </div>
         </div>
+        <button 
+          disabled={!name || !email || !desc || selectedServices.length < 0}
+          className={`button-main ${(name && email && desc && selectedServices.length > 0) ? 'button-enabled' : 'button-disabled'}`}
+          onClick={() => handleSubmit(event)}
+        >
+          {t("submit_text")}
+        </button>
       </div>
-      <div className="input-row">
-        <div className="input-container wide">
-          <p className="input-label">What are you building?</p>
-          <textarea
-            id="description"
-            className="input-area"
-            value={desc}
-            onChange={(e) => setDesc(e.target.value)}
-            rows={5} // Sets the initial visible height in text rows
-            placeholder="Description of our project, product, or problem..."
-          />
+      ) : (
+        <div className="form">
+          <img src={checkmark} width="94" height="94" />
+          <p>{t("success_text")}</p>
         </div>
-      </div>
-      <div className="input-row">
-        <div className="input-container">
-          <p className="input-label">Budget</p>
-          <select
-            id="budget"
-            value={budget}
-            onChange={handleChangeBudget}
-            className="input-field"
-          >
-            {budgetOptions.map(({ id, range }, key) => (
-              <option value={id} key={key}>
-                {range}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="input-container">
-          <p className="input-label">Timeline</p>
-          <select
-            id="timeline"
-            value={timeline}
-            onChange={handleChangeTimeline}
-            className="input-field"
-          >
-            {timelineOptions.map(({ id, range }, key) => (
-              <option value={id} key={key}>
-                {range}
-              </option>
-            ))}
-          </select>
-        </div>
-      </div>
-      <button 
-        className="button-main" 
-        onClick={() => handleSubmit(event)}
-      >
-        SUBMIT
-      </button>
+      )}
     </section>
   )
 }

@@ -27,7 +27,7 @@ const Header = () => {
             </h1>
           </div>
           <p className='hero-body'>{t("hero_subtitle")}</p>
-          <a className='button-main' href="#projects">{t("cta_title")}</a>
+          <a className='button-main button-enabled' href="#projects">{t("cta_title")}</a>
         </div>
         <img
           src={hero}

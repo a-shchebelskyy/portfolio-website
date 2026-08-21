@@ -10,5 +10,37 @@
     "hero_tech": "Your Tech",
     "hero_dream": "Your Dream",
     "hero_subtitle": "Full-stack developer focused on web applications, mobile apps, SaaS products, and specialized software from concept to deployment.",
-    "cta_title": "VIEW MY WORK"
+    "cta_title": "VIEW MY WORK",
+
+    "form_name": "Name",
+    "form_name_placeholder": "Your name",
+    "form_email": "Email",
+    "form_email_placeholder": "you@example.com",
+    "form_service_label": "Choose Services",
+    "design": "Product Design",
+    "webapp": "Web Application",
+    "mobile": "Mobile Application",
+    "ai": "AI-Powered Application",
+    "other": "Other",
+    "form_desc_label": "What are you building?",
+    "form_desc_placeholder": "Description of your project, idea, or problem...",
+    "form_budget": "Budget",
+    "budget_options": {
+        "0": "<$1,000",
+        "1": "$1,000-$5,000",
+        "2": "$5,000-$10,000",
+        "3": ">$10,000",
+        "4": "Not sure"
+    },
+    "form_timeline": "Timeline",
+    "timeline_options": {
+        "0": "<1 month",
+        "1": "1-6 months",
+        "2": "6-12 months",
+        "3": ">12 months",
+        "4": "Flexible / No Deadline",
+        "5": "Not sure"
+    },
+    "submit_text": "SUBMIT",
+    "success_text": "Thank you for your inquiry! I will try to respond within 24 hours."
 }

@@ -10,5 +10,37 @@
     "hero_tech": "Twoją Technologię",
     "hero_dream": "Twoje Marzenie",
     "hero_subtitle": "Programista full-stack specjalizujący się w aplikacjach internetowych, aplikacjach mobilnych, produktach SaaS i specjalistycznym oprogramowaniu, od koncepcji do wdrożenia.",
-    "cta_title": "ZOBACZ PROJEKTY"
+    "cta_title": "ZOBACZ PROJEKTY",
+
+    "form_name": "Imię",
+    "form_name_placeholder": "Twoje imię",
+    "form_email": "Adres e-mail",
+    "form_email_placeholder": "you@example.com",
+    "form_service_label": "Wybierz usługi",
+    "design": "Projektowanie produktu",
+    "webapp": "Aplikacja internetowa",
+    "mobile": "Aplikacja mobilna",
+    "ai": "Aplikacja oparta na sztucznej inteligencji",
+    "other": "Inne",
+    "form_desc_label": "Co tworzysz?",
+    "form_desc_placeholder": "Opis Twojego projektu, pomysłu lub problemu...",
+    "form_budget": "Budżet",
+    "budget_options": {
+        "0": "<zł 5 000",
+        "1": "zł 5 000-10 000",
+        "2": "zł 10 000-20 000",
+        "3": ">zł 20 000",
+        "4": "Nie jestem pewien"
+    },
+    "form_timeline": "Termin",
+    "timeline_options": {
+        "0": "<1 miesiąc",
+        "1": "1-6 miesięcy",
+        "2": "6-12 miesięcy",
+        "3": ">12 miesięcy",
+        "4": "Elastyczny / Bez terminu",
+        "5": "Nie jestem pewien"
+    },
+    "submit_text": "SKŁADAĆ",
+    "success_text": "Dziękujemy za zapytanie! Postaram się odpowiedzieć w ciągu 24 godzin."
 }
