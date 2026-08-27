@@ -7,7 +7,7 @@ import Footer from './components/footer';
 
 const App = () => {
   return (
-    <main className="app transition-all ease-in">
+    <main className="app">
       <Navbar />
       <Header />
       <About />

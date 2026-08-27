@@ -117,6 +117,46 @@ html {
   50% { opacity: 0; }
 }
 
+.about-row {
+  @apply flex flex-row w-full items-start justify-between space-x-16;
+}
+
+.headshot {
+  @apply rounded-full;
+}
+
+.slideshow {
+  @apply flex flex-col h-[448px] w-full max-w-[512px] items-start justify-between;
+}
+
+.slides-wrapper {
+  @apply flex flex-col h-[376px] w-full max-w-[512px] items-start justify-between overflow-hidden rounded-xl bg-neutral-50;
+}
+
+.slides-row {
+  @apply flex flex-row h-full w-full transition-transform duration-500 ease-in-out;
+}
+
+.slide {
+  @apply flex flex-col min-w-[512px] h-full p-6 space-y-2;
+}
+
+.slide-title {
+  @apply text-2xl font-semibold;
+}
+
+.slide-button-container {
+  @apply flex flex-row w-full items-end justify-end space-x-2;
+}
+
+.slide-button {
+  @apply flex flex-row w-[48px] h-[48px] items-center justify-center rounded-full border border-black text-black hover:bg-black hover:text-white;
+}
+
+.text-inline {
+  @apply flex flex-row items-start justify-start space-x-1;
+}
+
 .projects-row {
   @apply flex flex-row w-full items-center justify-between space-x-6;
 }
@@ -174,7 +214,7 @@ html {
 }
 
 .footer {
-  @apply flex flex-row items-center justify-between p-6 bg-neutral-200;
+  @apply flex flex-row bottom-0 items-center justify-between px-16 py-6 bg-neutral-200;
 }
 
 .email-button {
