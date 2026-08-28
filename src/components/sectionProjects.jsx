@@ -1,10 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Modal from './modal';
 import '../index.css'; // Make sure to import your CSS file
 import { useTranslation } from 'react-i18next';
+import languaScreenshot from './../../public/images/screenshots/langua.png';
+import vectorScreenshot from './../../public/images/screenshots/vector.png';
+
+const projectsData = [
+  {
+    title: 'Langua',
+    subtitle: 'Language Tutoring Platform',
+    thumbnail: languaScreenshot,
+    link: 'https://lang-ua.vercel.app/',
+  },
+  {
+    title: 'Vector E-Lab',
+    subtitle: 'Interactive Chemistry Tool',
+    thumbnail: vectorScreenshot,
+    link: 'https://lang-ua.vercel.app/',
+  },
+  {
+    title: 'MIO Connect',
+    subtitle: 'Prosthetic Configuration Software',
+    thumbnail: languaScreenshot,
+    link: 'https://lang-ua.vercel.app/',
+  },
+  {
+    title: 'Peak Fitness',
+    subtitle: 'Community Fitness Application',
+    thumbnail: languaScreenshot,
+    link: 'https://lang-ua.vercel.app/',
+  },
+];
 
 const Projects = () => {
 
   const { t } = useTranslation();
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // const changeLanguage = (lng) => {
   //   t.changeLanguage(lng);
@@ -15,21 +46,39 @@ const Projects = () => {
       <h2 className='subtitle'>
         {t("projects")}
       </h2>
-      <h3>Selected Work</h3>
-      <p>A selection of applications and technical projects I've designed and built across web, mobile, SaaS, and specialized software.</p>
       <div className="projects-row">
-        <div className="project-card"></div>
-        <div className="project-card"></div>
-        <div className="project-card"></div>
-        <div className="project-card"></div>
+        {projectsData.map(( project, index ) => (
+          <a className="project-card" href={project.link} target="_blank">
+            <img src={project.thumbnail} className="project-thumb" />
+            <p className="project-title">{t("project_data." + index + ".title")}</p>
+            <p className="project-subtitle">{t("project_data." + index + ".subtitle")}</p>
+          </a>
+        ))}
       </div>
-      <h3>More Projects</h3>
       <div className="space-y-3">
-        <p>I regularly experiment with new ideas, technologies, and software concepts. My GitHub contains additional projects, prototypes, experiments, and technical explorations.</p>
         <a className="link-arrow" href="https://github.com/a-shchebelskyy/" target="_blank">
-          <p>View GitHub</p><p>→</p>
+          <p>{t("projects_more")} →</p>
         </a>
       </div>
+      <Modal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+        title="Langua"
+        subtitle="Language Tutoring Platform"
+        p1="A full-stack platform designed to connect language learners with structured educational content and instructors."
+        p2="I designed and developed the application architecture, user experience, authentication, database layer, and dynamic course system."
+
+      >
+        {/* Footer Actions */}
+        <div className="flex justify-end gap-3 mt-6">
+          <button 
+            onClick={() => setIsModalOpen(false)}
+            className="link-arrow"
+          >
+            View Project →
+          </button>
+        </div>
+      </Modal>
     </main>
   )
 }

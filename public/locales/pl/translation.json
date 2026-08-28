@@ -12,6 +12,62 @@
     "hero_subtitle": "Programista full-stack specjalizujący się w aplikacjach internetowych, aplikacjach mobilnych, produktach SaaS i specjalistycznym oprogramowaniu, od koncepcji do wdrożenia.",
     "cta_title": "ZOBACZ PROJEKTY",
 
+    "slides": {
+        "1": {
+            "header": "Tworzę oprogramowanie od pomysłu do realizacji",
+            "body1": "Jestem programistą, którego pasją jest tworzenie przemyślanych, niezawodnych aplikacji dla startupów, firm i ambitnych projektów.",
+            "body2": "Moja praca obejmuje aplikacje webowe full-stack, aplikacje mobilne, produkty SaaS i specjalistyczne oprogramowanie. Lubię przekształcać pomysły w coś, z czego ludzie mogą faktycznie korzystać.",
+            "body3": "Koncentruję się na przejrzystych interfejsach, łatwej w utrzymaniu architekturze i rozwiązywaniu problemu, a nie tylko na implementacji listy funkcji."
+        },
+        "2": {
+            "header": "Czym się zajmuję",
+            "fullstack_development": "Programowanie full-stack",
+            "fullstack_development_text": "Aplikacje webowe, API, uwierzytelnianie, pulpity nawigacyjne i platformy SaaS.",
+            "mobile_development": "Programowanie mobilne",
+            "mobile_development_text": "Aplikacje wieloplatformowe na iOS i Androida z wykorzystaniem React Native i Expo.",
+            "custom_software": "Oprogramowanie na zamówienie",
+            "custom_software_text": "Narzędzia interaktywne, oprogramowanie do wizualizacji i oprogramowanie oparte na specjalistycznych wymaganiach.",
+            "mvp_development": "Programowanie MVP",
+            "mvp_development_text": "Pomagamy przekształcić wczesny pomysł w funkcjonalny produkt."
+        },
+        "3": {
+            "header": "Moje podejście",
+            "body1": "Wolę ściśle współpracować z problemem, zanim zacznę wdrażać. Gdy wymagania są jasne, buduję stopniowo, komunikuję się w trakcie całego procesu i dbam o ustrukturyzowaną bazę kodu.",
+            "body2": "Niezależnie od tego, czy potrzebujesz MVP, aplikacji skierowanej do klienta, czy niestandardowego narzędzia wewnętrznego, mój cel jest ten sam: tworzyć oprogramowanie, które jest użyteczne, zrozumiałe i trwałe."
+        },
+        "4": {
+            "header": "Technologie",
+            "frontend": "Frontend",
+            "backend": "Backend",
+            "database": "Baza danych",
+            "mobile": "Mobilny",
+            "desktop": "Desktop",
+            "tools": "Narzędzia i infrastruktura",
+            "integrations": "Integracje"
+        }
+    },
+
+    "project_data": {
+        "0": {
+            "title": "Langua",
+            "subtitle": "Platforma do nauki języków obcych"
+        },
+        "1": {
+            "title": "Vector E-Lab",
+            "subtitle": "Interaktywne narzędzie do nauki chemii"
+        },
+        "2": {
+            "title": "MIO Connect",
+            "subtitle": "Oprogramowanie do konfiguracji protez"
+        },
+        "3": {
+            "title": "Peak Fitness",
+            "subtitle": "Aplikacja do fitnessu społecznościowego"
+        }
+    },
+
+    "projects_more": "Zobacz więcej projektów na Github",
+
     "form_name": "Imię",
     "form_name_placeholder": "Twoje imię",
     "form_email": "Adres e-mail",
@@ -42,5 +98,8 @@
         "5": "Nie jestem pewien"
     },
     "submit_text": "SKŁADAĆ",
-    "success_text": "Dziękujemy za zapytanie! Postaram się odpowiedzieć w ciągu 24 godzin."
+    "success_text": "Dziękujemy za zapytanie! Postaram się odpowiedzieć w ciągu 24 godzin.",
+
+    "icons8": "Ikony autorstwa",
+    "copyright": "2026 Aleksander Szczebelski. Wszelkie prawa zastrzeżone."
 }

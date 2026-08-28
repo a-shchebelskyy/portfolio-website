@@ -245,5 +245,4 @@ const Contact = () => {
     </section>
   )
 }
-//Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
 export default Contact;

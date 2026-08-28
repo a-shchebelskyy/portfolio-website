@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { useTranslation } from 'react-i18next';
-import github from '../../public/icons/github.png';
-import linkedin from '../../public/icons/linkedin.png';
 import { Copy, Check } from 'react-feather';
 import './../index.css'; // Make sure to import your CSS file
 
@@ -27,25 +25,29 @@ const Footer = () => {
 
   return (
     <div className="footer">
-      <div>
-        <button className="email-button" onClick={handleCopy} style={{ color: copied ? 'green' : 'black'}}>
-          <p>{email}</p>
-          {copied ? (
-            <Check color="green" size={16} />
-          ) : (
-            <Copy color="black" size={16} />
-          )}
-        </button>
+      <div className="footer-links">
+        <div>
+          <button className="email-button" onClick={handleCopy} style={{ color: copied ? 'green' : 'black'}}>
+            <p>{email}</p>
+            {copied ? (
+              <Check color="green" size={16} />
+            ) : (
+              <Copy color="black" size={16} />
+            )}
+          </button>
+        </div>
+        <div className="footer-socials">
+          <a className="footer-link" href="https://github.com/a-shchebelskyy/" target="_blank">
+            GitHub
+          </a>
+          <p>·</p> 
+          <a className="footer-link" href="https://github.com/a-shchebelskyy/" target="_blank">
+            LinkedIn
+          </a>
+        </div>
       </div>
-      <div className="footer-socials">
-        <a className="footer-link" href="https://github.com/a-shchebelskyy/" target="_blank">
-          GitHub
-        </a>
-        <p>·</p> 
-        <a className="footer-link" href="https://github.com/a-shchebelskyy/" target="_blank">
-          LinkedIn
-        </a>
-      </div>
+      <p className="footer-subtext">{t("icons8")} <a target="_blank" href="https://icons8.com">Icons8</a></p>
+      <p className="footer-subtext">© {t("copyright")}</p>
     </div>
   );
 };

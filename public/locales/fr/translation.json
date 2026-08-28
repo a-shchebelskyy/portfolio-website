@@ -12,6 +12,62 @@
     "hero_subtitle": "Développeur full-stack spécialisé dans les applications web, les applications mobiles, les produits SaaS et les logiciels spécialisés, de la conception au déploiement.",
     "cta_title": "VOIR MON TRAVAIL",
 
+    "slides": {
+        "1": {
+            "header": "Je conçois des logiciels, de l'idée à la réalisation",
+            "body1": "Je suis développeur logiciel et je me spécialise dans la création d'applications fiables et bien pensées pour les startups, les entreprises et les projets ambitieux.",
+            "body2": "Mon expérience couvre les applications web complètes, les applications mobiles, les produits SaaS et les logiciels spécialisés. J'aime transformer une idée en un produit réellement utilisable.",
+            "body3": "Je privilégie les interfaces claires, une architecture maintenable et la résolution du problème sous-jacent plutôt que la simple implémentation d'une liste de fonctionnalités."
+        },    
+        "2": {
+            "header": "Ce que je fais",  
+            "fullstack_development": "Développement Full-Stack",
+            "fullstack_development_text": "Applications web, API, authentification, tableaux de bord et plateformes SaaS.",
+            "mobile_development": "Développement mobile",
+            "mobile_development_text": "Applications multiplateformes pour iOS et Android utilisant React Native et Expo.",
+            "custom_software": "Logiciels sur mesure",
+            "custom_software_text": "Outils interactifs, logiciels de visualisation et logiciels conçus pour répondre à des besoins spécifiques.",
+            "mvp_development": "Développement MVP",
+            "mvp_development_text": "Contribuer à transformer une idée naissante en un produit fonctionnel."
+        },
+        "3": {
+            "header": "Mon approche",    
+            "body1": "Je préfère analyser le problème en profondeur avant de me lancer dans l'implémentation. Une fois les exigences clairement définies, je développe de manière incrémentale, je communique tout au long du processus et je maintiens une base de code structurée.",
+            "body2": "Que vous ayez besoin d'un MVP, d'une application client ou d'un outil interne personnalisé, mon objectif reste le même : créer un logiciel utile, compréhensible et durable."
+        },    
+        "4": {
+            "header": "Technologies",    
+            "frontend": "Frontend",
+            "backend": "Backend",
+            "database": "Database",
+            "mobile": "Mobile",
+            "desktop": "Desktop",
+            "tools": "Outils et infrastructure",
+            "integrations": "Intégrations"
+        }
+    },
+
+    "project_data": {
+        "0": {
+            "title": "Langua",
+            "subtitle": "Plateforme de tutorat linguistique"
+        },
+        "1": {
+            "title": "Vector E-Lab",
+            "subtitle": "Outil de chimie interactif"
+        },
+        "2": {
+            "title": "MIO Connect",
+            "subtitle": "Logiciel de configuration de prothèses"
+        },
+        "3": {
+            "title": "Peak Fitness",
+            "subtitle": "Application de remise en forme communautaire"
+        }
+    },
+
+    "projects_more": "Voir plus de projets sur Github",
+
     "form_name": "Nom",
     "form_name_placeholder": "Votre nom",
     "form_email": "Adresse e-mail",
@@ -42,5 +98,8 @@
         "5": "Pas sûr"
     },
     "submit_text": "SOUMETTRE",
-    "success_text": "Merci pour votre demande ! Je m'efforcerai de vous répondre dans 24 heures."
+    "success_text": "Merci pour votre demande ! Je m'efforcerai de vous répondre dans 24 heures.",
+
+    "icons8": "Icônes par",
+    "copyright": "2026 Alexander Shchebelskyy. Tous droits réservés."
 }
