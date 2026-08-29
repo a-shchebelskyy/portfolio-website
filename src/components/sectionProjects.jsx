@@ -4,6 +4,8 @@ import '../index.css'; // Make sure to import your CSS file
 import { useTranslation } from 'react-i18next';
 import languaScreenshot from './../../public/images/screenshots/langua.png';
 import vectorScreenshot from './../../public/images/screenshots/vector.png';
+import mioScreenshot from './../../public/images/screenshots/mio.jpeg';
+import peakScreenshot from './../../public/images/screenshots/peak.png';
 
 const projectsData = [
   {
@@ -16,19 +18,19 @@ const projectsData = [
     title: 'Vector E-Lab',
     subtitle: 'Interactive Chemistry Tool',
     thumbnail: vectorScreenshot,
-    link: 'https://lang-ua.vercel.app/',
+    link: 'https://e-lab-beta.vercel.app',
   },
   {
     title: 'MIO Connect',
     subtitle: 'Prosthetic Configuration Software',
-    thumbnail: languaScreenshot,
+    thumbnail: mioScreenshot,
     link: 'https://lang-ua.vercel.app/',
   },
   {
     title: 'Peak Fitness',
     subtitle: 'Community Fitness Application',
-    thumbnail: languaScreenshot,
-    link: 'https://lang-ua.vercel.app/',
+    thumbnail: peakScreenshot,
+    link: 'https://github.com/a-shchebelskyy/Peak-Fitness',
   },
 ];
 
