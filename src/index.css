@@ -161,6 +161,54 @@ html {
   @apply flex flex-row w-full items-center justify-between space-x-6;
 }
 
+.accordion-row {
+  @apply flex flex-row w-full items-center max-h-screen space-x-2;
+}
+
+.accordion-item {
+  @apply flex flex-row shrink max-w-full;
+}
+
+.text-sideways {
+  @apply flex mb-3 inline-block -rotate-90 w-10 whitespace-nowrap;
+}
+
+.accordion-button {
+  @apply flex flex-col h-full w-[64px] h-[396px] justify-end items-center px-3 py-6 rounded-l-xl text-xl text-left font-medium text-slate-800 bg-white;
+}
+
+.accordion-content {
+  @apply flex max-h-[396px] p-6 flex-row rounded-r-xl bg-white;
+}
+
+.accordion-open {
+  @apply w-full space-x-3 transition-all duration-1000 ease-in-out;
+}
+
+.accordion-closed {
+  @apply w-1;
+}
+
+.overflow {
+  @apply flex flex-row items-start justify-between overflow-hidden space-x-4;
+}
+
+.accordion-text {
+  @apply flex flex-col h-full justify-between min-w-[296px] text-slate-600;
+}
+
+.accordion-subtitle {
+  @apply text-lg;
+}
+
+.accordion-body {
+  @apply text-sm;
+}
+
+.accordion-p {
+  @apply flex flex-col text-sm space-y-2;
+}
+
 .project-card {
   @apply flex flex-col w-full h-[196px] rounded-xl hover:scale-90 transition-transform duration-500 ease-in-out;
 }
@@ -174,7 +222,7 @@ html {
 }
 
 .project-thumb {
-  @apply rounded-2xl mb-2;
+  @apply rounded-2xl min-h-[192px] min-w-[396px];
 }
 
 .modal {

@@ -30,7 +30,7 @@ const Navbar = () => {
               height="20"
             />
           </a>
-          <a className="button-circle" href="https://github.com/a-shchebelskyy/" target="_blank">
+          <a className="button-circle" href="https://www.linkedin.com/in/alex-shchebelskyy/" target="_blank">
             <img
               src={linkedin}
               width="20"
