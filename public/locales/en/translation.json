@@ -50,22 +50,28 @@
     "project_data": {
         "0": {
             "title": "Langua",
-            "subtitle": "Language Tutoring Platform"
+            "subtitle": "Language Tutoring Platform",
+            "body": "A full-stack platform designed to connect language learners with structured educational content and instructors. I designed and developed the application architecture, user experience, authentication, database layer, and dynamic course system."
         },
         "1": {
             "title": "Vector E-Lab",
-            "subtitle": "Interactive Chemistry Tool"
+            "subtitle": "Interactive Chemistry Tool",
+            "body": "An interactive chemistry application for constructing and visualizing molecular structures. The project required custom graphical logic for molecular representation, atom positioning, structural formulas, and switching between different visualization modes."
         },
         "2": {
             "title": "MIO Connect",
-            "subtitle": "Prosthetic Configuration Software"
+            "subtitle": "Prosthetic Configuration Software",
+            "body": "A desktop application for configuring and communicating with experimental myoelectric prosthetic hardware. The project combines software development with embedded hardware, including serial communication, microcontrollers, EMG input, motor control, and a desktop configuration interface."
         },
         "3": {
             "title": "Peak Fitness",
-            "subtitle": "Community Fitness Application"
+            "subtitle": "Community Fitness Application",
+            "body": "A mobile application concept centered around community-driven fitness, activity tracking, and social interaction. The project explores mobile-first product design, authentication, user profiles, and community features."
         }
     },
 
+    "projects_view" : "View Project",
+    "projects_github": "View Github Page",
     "projects_more": "View More Projects on Github",
 
     "form_name": "Name",

@@ -50,22 +50,28 @@
     "project_data": {
         "0": {
             "title": "Langua",
-            "subtitle": "Plateforme de tutorat linguistique"
+            "subtitle": "Plateforme de tutorat linguistique",
+            "body": "Plateforme complète conçue pour mettre en relation les apprenants de langues avec des contenus pédagogiques structurés et des formateurs. J'ai conçu et développé l'architecture de l'application, l'expérience utilisateur, l'authentification, la base de données et le système de cours dynamiques."
         },
         "1": {
             "title": "Vector E-Lab",
-            "subtitle": "Outil de chimie interactif"
+            "subtitle": "Outil de chimie interactif",
+            "body": "Une application de chimie interactive pour la construction et la visualisation de structures moléculaires. Le projet a nécessité une logique graphique personnalisée pour la représentation moléculaire, le positionnement des atomes, les formules structurales et la commutation entre différents modes de visualisation."
         },
         "2": {
             "title": "MIO Connect",
-            "subtitle": "Logiciel de configuration de prothèses"
+            "subtitle": "Logiciel de configuration de prothèses",
+            "body": "Application de bureau pour la configuration et la communication avec du matériel prothétique myoélectrique expérimental. Ce projet combine développement logiciel et matériel embarqué, incluant communication série, microcontrôleurs, entrée EMG, commande de moteur et interface de configuration de bureau."
         },
         "3": {
             "title": "Peak Fitness",
-            "subtitle": "Application de remise en forme communautaire"
+            "subtitle": "Application de remise en forme communautaire",
+            "body": "Un concept d'application mobile axé sur le fitness communautaire, le suivi d'activité et l'interaction sociale. Le projet explore une approche de conception centrée sur le mobile, l'authentification, les profils utilisateurs et les fonctionnalités communautaires."
         }
     },
 
+    "projects_view" : "Voir le projet",
+    "projects_github" : "Voir la page Github",
     "projects_more": "Voir plus de projets sur Github",
 
     "form_name": "Nom",

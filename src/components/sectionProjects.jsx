@@ -14,6 +14,7 @@ const projectsData = [
     body: 'A full-stack platform designed to connect language learners with structured educational content and instructors. I designed and developed the application architecture, user experience, authentication, database layer, and dynamic course system.',
     thumbnail: languaScreenshot,
     link: 'https://lang-ua.vercel.app/',
+    github: 'https://lang-ua.vercel.app/',
   },
   {
     title: 'Vector E-Lab',
@@ -21,20 +22,21 @@ const projectsData = [
     body: 'An interactive chemistry application for constructing and visualizing molecular structures. The project required custom graphical logic for molecular representation, atom positioning, structural formulas, and switching between different visualization modes.',
     thumbnail: vectorScreenshot,
     link: 'https://e-lab-beta.vercel.app',
+    github: 'https://e-lab-beta.vercel.app',
   },
   {
     title: 'MIO Connect',
     subtitle: 'Prosthetic Configuration Software',
     body: 'A desktop application for configuring and communicating with experimental myoelectric prosthetic hardware. The project combines software development with embedded hardware, including serial communication, microcontrollers, EMG input, motor control, and a desktop configuration interface.',
     thumbnail: mioScreenshot,
-    link: 'https://lang-ua.vercel.app/',
+    github: 'https://lang-ua.vercel.app/',
   },
   {
     title: 'Peak Fitness',
     subtitle: 'Community Fitness Application',
     body: 'A mobile application concept centered around community-driven fitness, activity tracking, and social interaction. The project explores mobile-first product design, authentication, user profiles, and community features.',
     thumbnail: peakScreenshot,
-    link: 'https://github.com/a-shchebelskyy/Peak-Fitness',
+    github: 'https://github.com/a-shchebelskyy/Peak-Fitness',
   },
 ];
 
@@ -67,7 +69,7 @@ const Projects = () => {
               onClick={() => handleToggle(index)}
               className="accordion-button"
             >
-              <span className="text-sideways">{item.title}</span>
+              <span className="text-sideways">{t(`project_data.${index}.title`)}</span>
             </button>
 
             {/* Accordion Content wrapper with smooth width transition */}
@@ -76,19 +78,24 @@ const Projects = () => {
                 isOpen ? 'accordion-open' : 'accordion-closed'
               }`}
             >
-              <div className="overflow">
                 <div className="accordion-text">
                   <div className="accordion-p">
-                    <p className="accordion-subtitle">{item.subtitle}</p>
-                    <p className="accordion-body">{item.body}</p>
+                    <p className="accordion-subtitle">{t(`project_data.${index}.subtitle`)}</p>
+                    <p className="accordion-body">{t(`project_data.${index}.body`)}</p>
                   </div>
-                  <a className="link-arrow" href={item.link} target="_blank">View Project →</a>
+                  <div className="accordion-links">
+                    {item.link && (
+                      <a className="link-arrow" href={item.link} target="_blank">{t(`projects_view`)} →</a>
+                    )}
+                    {item.github && (
+                      <a className="link-arrow" href={item.github} target="_blank">{t(`projects_github`)} →</a>
+                    )}
+                  </div>
                 </div>
                 <img
                   src={item.thumbnail}
                   className="project-thumb"
                 />
-              </div>
             </div>
           </div>
         );

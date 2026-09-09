@@ -162,11 +162,11 @@ html {
 }
 
 .accordion-row {
-  @apply flex flex-row w-full items-center max-h-screen space-x-2;
+  @apply flex flex-row w-full items-center max-h-screen space-x-2 transition-all duration-1000 ease-in-out;
 }
 
 .accordion-item {
-  @apply flex flex-row shrink max-w-full;
+  @apply flex flex-row max-w-full transition-all duration-1000 ease-in-out;
 }
 
 .text-sideways {
@@ -174,27 +174,31 @@ html {
 }
 
 .accordion-button {
-  @apply flex flex-col h-full w-[64px] h-[396px] justify-end items-center px-3 py-6 rounded-l-xl text-xl text-left font-medium text-slate-800 bg-white;
+  @apply flex flex-col h-full w-[64px] h-[396px] justify-end items-center px-3 py-6 rounded-l-xl text-xl text-left font-medium text-slate-800 bg-white transition-all duration-1000 ease-in-out;
 }
 
 .accordion-content {
-  @apply flex max-h-[396px] p-6 flex-row rounded-r-xl bg-white;
+  @apply flex max-h-[396px] flex-row items-start justify-between rounded-r-xl bg-white overflow-hidden transition-all duration-1000 ease-in-out;
 }
 
 .accordion-open {
-  @apply w-full space-x-3 transition-all duration-1000 ease-in-out;
+  @apply w-full p-6 space-x-4 transition-all duration-1000 ease-in-out;
 }
 
 .accordion-closed {
-  @apply w-1;
+  @apply w-0 p-0 transition-all duration-1000 ease-in-out;
 }
 
 .overflow {
-  @apply flex flex-row items-start justify-between overflow-hidden space-x-4;
+  @apply flex flex-row items-start justify-between overflow-hidden;
 }
 
 .accordion-text {
-  @apply flex flex-col h-full justify-between min-w-[296px] text-slate-600;
+  @apply flex flex-col h-full justify-between min-w-[320px] text-slate-600 transition-all duration-1000 ease-in-out;
+}
+
+.accordion-links {
+  @apply space-y-2;
 }
 
 .accordion-subtitle {
@@ -209,44 +213,8 @@ html {
   @apply flex flex-col text-sm space-y-2;
 }
 
-.project-card {
-  @apply flex flex-col w-full h-[196px] rounded-xl hover:scale-90 transition-transform duration-500 ease-in-out;
-}
-
-.project-title {
-  @apply text-base font-semibold text-black;
-}
-
-.project-subtitle {
-  @apply text-sm text-neutral-700;
-}
-
 .project-thumb {
-  @apply rounded-2xl min-h-[192px] min-w-[396px];
-}
-
-.modal {
-  @apply fixed inset-0 z-50 flex w-screen h-screen items-center justify-center bg-black bg-opacity-50 p-4 backdrop-blur-sm;
-}
-
-.modal-card {
-  @apply relative w-full max-w-md flex flex-col space-y-2 rounded-xl bg-neutral-50 p-6 shadow-2xl transition-all transform;
-}
-
-.modal-close {
-  @apply absolute h-[48px] w-[48px] top-4 right-4 text-neutral-500 hover:text-black text-2xl border-2 border-neutral-500 hover:border-black rounded-full;
-}
-
-.modal-header {
-  @apply text-xl font-semibold text-black;
-}
-
-.modal-subheader {
-  @apply text-base text-black;
-}
-
-.modal-body {
-  @apply text-sm;
+  @apply rounded-2xl min-h-[240px] min-w-[480px];
 }
 
 .more-text {

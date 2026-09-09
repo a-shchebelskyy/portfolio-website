@@ -23,10 +23,6 @@ const About = () => {
 
   const { t } = useTranslation();
 
-  // const changeLanguage = (lng) => {
-  //   t.changeLanguage(lng);
-  // };
-
   return (
     <section className="main" id="about">
       <h1 className='subtitle'>

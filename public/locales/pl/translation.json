@@ -50,22 +50,28 @@
     "project_data": {
         "0": {
             "title": "Langua",
-            "subtitle": "Platforma do nauki języków obcych"
+            "subtitle": "Platforma do nauki języków obcych",
+            "body": "Platforma typu „full-stack”, zaprojektowana, aby łączyć osoby uczące się języków obcych ze strukturalnymi materiałami edukacyjnymi i instruktorami. Zaprojektowałem i rozwinąłem architekturę aplikacji, interfejs użytkownika, uwierzytelnianie, warstwę bazy danych oraz dynamiczny system kursów."
         },
         "1": {
             "title": "Vector E-Lab",
-            "subtitle": "Interaktywne narzędzie do nauki chemii"
+            "subtitle": "Interaktywne narzędzie do nauki chemii",
+            "body": "Interaktywna aplikacja chemiczna do konstruowania i wizualizacji struktur molekularnych. Projekt wymagał niestandardowej logiki graficznej do reprezentacji molekularnej, pozycjonowania atomów, wzorów strukturalnych i przełączania między różnymi trybami wizualizacji."
         },
         "2": {
             "title": "MIO Connect",
-            "subtitle": "Oprogramowanie do konfiguracji protez"
+            "subtitle": "Oprogramowanie do konfiguracji protez",
+            "body": "Aplikacja desktopowa do konfiguracji i komunikacji z eksperymentalnym sprzętem protezy mioelektrycznej. Projekt łączy rozwój oprogramowania ze sprzętem wbudowanym, w tym komunikacją szeregową, mikrokontrolerami, wejściem EMG, sterowaniem silnikiem oraz interfejsem konfiguracyjnym pulpitu."
         },
         "3": {
             "title": "Peak Fitness",
-            "subtitle": "Aplikacja do fitnessu społecznościowego"
+            "subtitle": "Aplikacja do fitnessu społecznościowego",
+            "body": "Koncepcja aplikacji mobilnej skoncentrowana na społecznościowym monitorowaniu aktywności fizycznej, śledzeniu aktywności i interakcji społecznych. Projekt obejmuje projektowanie produktów w pierwszej kolejności na urządzeniach mobilnych, uwierzytelnianie, profile użytkowników i funkcje społecznościowe."
         }
     },
 
+    "projects_view": "Wyświetl projekt",
+    "projects_github": "Wyświetl stronę Github",
     "projects_more": "Zobacz więcej projektów na Github",
 
     "form_name": "Imię",
