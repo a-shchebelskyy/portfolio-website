@@ -4,7 +4,7 @@ import '../index.css'; // Make sure to import your CSS file
 import { useTranslation } from 'react-i18next';
 import languaScreenshot from './../../public/images/screenshots/langua.png';
 import vectorScreenshot from './../../public/images/screenshots/vector.png';
-import mioScreenshot from './../../public/images/screenshots/mio.jpeg';
+import mioScreenshot from './../../public/images/screenshots/mio.png';
 import peakScreenshot from './../../public/images/screenshots/peak.png';
 
 const projectsData = [
