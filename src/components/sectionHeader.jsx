@@ -8,10 +8,6 @@ const Header = () => {
 
   const { t } = useTranslation();
 
-  // const changeLanguage = (lng) => {
-  //   t.changeLanguage(lng);
-  // };
-
   return (
     <main className="main" id="header">
       <div className="hero">

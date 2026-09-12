@@ -205,7 +205,7 @@ const Contact = () => {
               onChange={handleChangeBudget}
               className="input-field"
             >
-              {budgetOptions.map(({ id, range }, key) => (
+              {budgetOptions.map(({ id }, key) => (
                 <option value={id} key={key}>
                   {t(`budget_options.${key}`)}
                 </option>
@@ -220,7 +220,7 @@ const Contact = () => {
               onChange={handleChangeTimeline}
               className="input-field"
             >
-              {timelineOptions.map(({ id, range }, key) => (
+              {timelineOptions.map(({ id }, key) => (
                 <option value={id} key={key}>
                   {t(`timeline_options.${key}`)}
                 </option>

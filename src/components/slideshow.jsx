@@ -1,18 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const Slideshow = ({ children }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Automatically move to the next slide
-  // useEffect(() => {
-  //   if (!autoplayInterval) return;
-
-  //   const interval = setInterval(() => {
-  //     handleNext();
-  //   }, autoplayInterval);
-
-  //   return () => clearInterval(interval);
-  // }, [currentIndex, autoplayInterval]);
 
   // Navigate to the previous slide
   const handlePrev = () => {
@@ -26,11 +15,6 @@ const Slideshow = ({ children }) => {
     setCurrentIndex((prevIndex) =>
       prevIndex === children.length - 1 ? 0 : prevIndex + 1
     );
-  };
-
-  // Jump to a specific slide from the dots
-  const goToSlide = (slideIndex) => {
-    setCurrentIndex(slideIndex);
   };
 
   if (!children || children.length === 0) return null;

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Modal from './modal';
 import '../index.css'; // Make sure to import your CSS file
 import { useTranslation } from 'react-i18next';
 import languaScreenshot from './../../public/images/screenshots/langua.png';
@@ -9,32 +8,20 @@ import peakScreenshot from './../../public/images/screenshots/peak.png';
 
 const projectsData = [
   {
-    title: 'Langua',
-    subtitle: 'Language Tutoring Platform',
-    body: 'A full-stack platform designed to connect language learners with structured educational content and instructors. I designed and developed the application architecture, user experience, authentication, database layer, and dynamic course system.',
     thumbnail: languaScreenshot,
     link: 'https://lang-ua.vercel.app/',
-    github: 'https://lang-ua.vercel.app/',
+    github: 'https://github.com/a-shchebelskyy/langua-webapp',
   },
   {
-    title: 'Vector E-Lab',
-    subtitle: 'Interactive Chemistry Tool',
-    body: 'An interactive chemistry application for constructing and visualizing molecular structures. The project required custom graphical logic for molecular representation, atom positioning, structural formulas, and switching between different visualization modes.',
     thumbnail: vectorScreenshot,
     link: 'https://e-lab-beta.vercel.app',
-    github: 'https://e-lab-beta.vercel.app',
+    github: 'https://github.com/a-shchebelskyy/e-lab',
   },
   {
-    title: 'MIO Connect',
-    subtitle: 'Prosthetic Configuration Software',
-    body: 'A desktop application for configuring and communicating with experimental myoelectric prosthetic hardware. The project combines software development with embedded hardware, including serial communication, microcontrollers, EMG input, motor control, and a desktop configuration interface.',
     thumbnail: mioScreenshot,
     github: 'https://lang-ua.vercel.app/',
   },
   {
-    title: 'Peak Fitness',
-    subtitle: 'Community Fitness Application',
-    body: 'A mobile application concept centered around community-driven fitness, activity tracking, and social interaction. The project explores mobile-first product design, authentication, user profiles, and community features.',
     thumbnail: peakScreenshot,
     github: 'https://github.com/a-shchebelskyy/Peak-Fitness',
   },

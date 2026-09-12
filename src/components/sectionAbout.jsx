@@ -16,7 +16,6 @@ import vercel from './../../public/icons/vercel-50.png';
 import docker from './../../public/icons/docker-48.png';
 import clerk from './../../public/icons/clerk.png';
 import stripe from './../../public/icons/stripe-48.png';
-import maps from './../../public/icons/google-maps-48.png';
 import openai from './../../public/icons/chatgpt-48.png';
 
 const About = () => {

@@ -3,10 +3,7 @@ import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 
 const languageOptions = [
-  {
-    language: "EN",
-    code: "en",
-  },
+  { language: "EN", code: "en" },
   { language: "FR", code: "fr" },
   { language: "PL", code: "pl" },
   { language: "УК", code: "ua" },
