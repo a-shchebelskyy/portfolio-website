@@ -28,7 +28,7 @@ const About = () => {
         {t("about")}
       </h1>
       <div className="about-row">
-        <img src={headshot1} width="448" height="448" className="headshot" />
+        <img src={headshot1} className="headshot" />
         <Slideshow>
           <div className="slide">
             <h3 className="slide-title">{t("slides.1.header")}</h3>

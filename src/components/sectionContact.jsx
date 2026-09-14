@@ -178,7 +178,7 @@ const Contact = () => {
                 onClick={() => handleToggleService(service.id)}
               >
                 <p className="service-label">{t(service.id)}</p>
-                <img src={service.icon} width="94" height="94" />
+                <img src={service.icon} className="service-icon" />
               </button>
               ))}
           </div>

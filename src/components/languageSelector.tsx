@@ -30,7 +30,7 @@ const LanguageSelector = () => {
       id="language"
       value={language}
       onChange={handleLanguageChange}
-      className="p-2"
+      className="language-selector"
     >
       {languageOptions.map(({ language, code }, key) => (
         <option value={code} key={key}>
