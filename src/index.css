@@ -20,7 +20,7 @@ html {
 }
 
 .navbar-mobile {
-  @apply flex flex-1 max-h-screen sticky top-0 pb-6 flex-col w-full items-center justify-start bg-neutral-50 z-10 transition-all duration-1000 ease-in-out;
+  @apply flex flex-1 max-h-screen sticky top-0 flex-col w-full items-center justify-start bg-neutral-50 z-10 transition-all duration-1000 ease-in-out;
 }
 
 .navbar {
@@ -146,11 +146,11 @@ html {
 }
 
 .slideshow {
-  @apply flex flex-col h-[448px] w-full max-w-[512px] items-start justify-between;
+  @apply flex flex-col h-[448px] w-full max-w-[328px] md:max-w-[512px] items-start justify-between;
 }
 
 .slides-wrapper {
-  @apply flex flex-col h-[376px] w-full max-w-[1024px] items-start justify-between overflow-hidden rounded-xl bg-neutral-50;
+  @apply flex flex-col h-[376px] w-full max-w-[512px] md:max-w-[1024px] items-start justify-between overflow-hidden rounded-xl bg-neutral-50;
 }
 
 .slides-row {
@@ -158,11 +158,15 @@ html {
 }
 
 .slide {
-  @apply flex flex-col min-w-[512px] h-full p-6 space-y-2;
+  @apply flex flex-col min-w-[328px] md:min-w-[512px] h-full p-3 md:p-6 space-y-2;
 }
 
 .slide-title {
-  @apply text-xl md:text-2xl font-semibold;
+  @apply text-lg md:text-2xl font-semibold;
+}
+
+.about-body {
+  @apply text-sm md:text-base;
 }
 
 .slide-button-container {
@@ -174,7 +178,7 @@ html {
 }
 
 .text-inline {
-  @apply flex flex-row items-start justify-start space-x-1;
+  @apply flex flex-row items-start justify-start space-x-1 text-sm md:text-base;
 }
 
 .accordion-row {

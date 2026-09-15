@@ -15,9 +15,9 @@
     "slides": {
         "1": {
             "header": "I build software from idea to reality",
-            "body1": "I'm a software developer focused on building thoughtful, reliable applications for startups, businesses, and ambitious projects.",
+            "body1": "I'm a software developer focused on building thoughtful, reliable applications for startups and businesses.",
             "body2": "My work spans full-stack web applications, mobile apps, SaaS products, and specialized software. I enjoy taking an idea and turning it into something people can actually use.",
-            "body3": "I focus on clean interfaces, maintainable architecture, and solving the underlying problem rather than simply implementing a list of features."
+            "body3": "I focus on clean interfaces and maintainable architecture, rather than simply implementing a list of features."
         },
         "2": {
             "header": "What I Do",
@@ -42,7 +42,7 @@
             "database": "Database",
             "mobile": "Mobile",
             "desktop": "Desktop",
-            "tools": "Tools & Infrastructure",
+            "tools": "Tools",
             "integrations": "Integrations"
         }
     },

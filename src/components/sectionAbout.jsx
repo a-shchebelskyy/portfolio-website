@@ -21,6 +21,7 @@ import openai from './../../public/icons/chatgpt-48.png';
 const About = () => {
 
   const { t } = useTranslation();
+  const iconSize = typeof window !== 'undefined' ? (window.innerWidth >= 640 ? 24 : 20) : 0;
 
   return (
     <section className="main" id="about">
@@ -50,13 +51,13 @@ const About = () => {
           </div>
           <div className="slide">
             <h3 className="slide-title">{t("slides.4.header")}</h3>
-            <div className="text-inline"><b>{t("slides.4.frontend")}:</b><img src={react} width="24" height="24"/><span>React</span><img src={nextjs} width="24" height="24"/><span>Next.js</span><img src={typescript} width="24" height="24"/><span>TypeScript</span></div>
-            <div className="text-inline"><b>{t("slides.4.backend")}:</b><img src={node} width="24" height="24"/><span>Node.js · REST APIs · WebSockets</span></div>
-            <div className="text-inline"><b>{t("slides.4.database")}:</b><img src={postgresql} width="24" height="24"/><span>PostgreSQL</span><img src={prisma} width="24" height="24"/><span>Prisma</span></div>
-            <div className="text-inline"><b>{t("slides.4.mobile")}:</b><img src={react} width="24" height="24"/><span>React Native</span><img src={expo} width="24" height="24"/><span>Expo</span></div>
-            <div className="text-inline"><b>{t("slides.4.desktop")}:</b><img src={electron} width="24" height="24"/><span>Electron</span></div>
-            <div className="text-inline"><b>{t("slides.4.tools")}:</b><img src={git} width="24" height="24"/><span>Git</span><img src={vercel} width="24" height="24"/><span>Vercel</span><img src={docker} width="24" height="24"/><span>Docker</span></div>
-            <div className="text-inline"><b>{t("slides.4.integrations")}:</b><img src={clerk} width="24" height="24"/><span>Clerk</span><img src={stripe} width="24" height="24"/><span>Stripe</span><img src={openai} width="24" height="24"/><span>Open AI</span></div>
+            <div className="text-inline"><b>{t("slides.4.frontend")}:</b><img src={react} width={iconSize} height={iconSize}/><span>React</span><img src={nextjs} width={iconSize} height={iconSize}/><span>Next.js</span><img src={typescript} width={iconSize} height={iconSize}/><span>TypeScript</span></div>
+            <div className="text-inline"><b>{t("slides.4.backend")}:</b><img src={node} width={iconSize} height={iconSize}/><span>Node.js · REST APIs</span></div>
+            <div className="text-inline"><b>{t("slides.4.database")}:</b><img src={postgresql} width={iconSize} height={iconSize}/><span>PostgreSQL</span><img src={prisma} width={iconSize} height={iconSize}/><span>Prisma</span></div>
+            <div className="text-inline"><b>{t("slides.4.mobile")}:</b><img src={react} width={iconSize} height={iconSize}/><span>React Native</span><img src={expo} width={iconSize} height={iconSize}/><span>Expo</span></div>
+            <div className="text-inline"><b>{t("slides.4.desktop")}:</b><img src={electron} width={iconSize} height={iconSize}/><span>Electron</span></div>
+            <div className="text-inline"><b>{t("slides.4.tools")}:</b><img src={git} width={iconSize} height={iconSize}/><span>Git</span><img src={vercel} width={iconSize} height={iconSize}/><span>Vercel</span><img src={docker} width={iconSize} height={iconSize}/><span>Docker</span></div>
+            <div className="text-inline"><b>{t("slides.4.integrations")}:</b><img src={clerk} width={iconSize} height={iconSize}/><span>Clerk</span><img src={stripe} width={iconSize} height={iconSize}/><span>Stripe</span><img src={openai} width={iconSize} height={iconSize}/><span>Open AI</span></div>
           </div>
         </Slideshow>
       </div>

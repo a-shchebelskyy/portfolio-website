@@ -7,6 +7,7 @@ import hero from '../../public/images/hero.png';
 const Header = () => {
 
   const { t } = useTranslation();
+  const width = typeof window !== 'undefined' ? window.innerWidth : 0;
 
   return (
     <main className="main" id="header">
@@ -27,8 +28,8 @@ const Header = () => {
         </div>
         <img
           src={hero}
-          width="512"
-          height="512"
+          width={width >= 640 ? "512" : "360"}
+          height={width >= 640 ? "512" : "360"}
         />
       </div>
     </main>

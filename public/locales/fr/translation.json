@@ -15,9 +15,9 @@
     "slides": {
         "1": {
             "header": "Je conçois des logiciels, de l'idée à la réalisation",
-            "body1": "Je suis développeur logiciel et je me spécialise dans la création d'applications fiables et bien pensées pour les startups, les entreprises et les projets ambitieux.",
+            "body1": "Je suis développeur logiciel et je me spécialise dans la création d'applications fiables et bien pensées pour les startups et les entreprises.",
             "body2": "Mon expérience couvre les applications web complètes, les applications mobiles, les produits SaaS et les logiciels spécialisés. J'aime transformer une idée en un produit réellement utilisable.",
-            "body3": "Je privilégie les interfaces claires, une architecture maintenable et la résolution du problème sous-jacent plutôt que la simple implémentation d'une liste de fonctionnalités."
+            "body3": "Je privilégie les interfaces claires et une architecture maintenable plutôt que la simple implémentation d'une liste de fonctionnalités."
         },    
         "2": {
             "header": "Ce que je fais",  
@@ -42,7 +42,7 @@
             "database": "Database",
             "mobile": "Mobile",
             "desktop": "Desktop",
-            "tools": "Outils et infrastructure",
+            "tools": "Outils",
             "integrations": "Intégrations"
         }
     },

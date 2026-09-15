@@ -15,9 +15,9 @@
     "slides": {
         "1": {
             "header": "Tworzę oprogramowanie od pomysłu do realizacji",
-            "body1": "Jestem programistą, którego pasją jest tworzenie przemyślanych, niezawodnych aplikacji dla startupów, firm i ambitnych projektów.",
+            "body1": "Jestem programistą, którego pasją jest tworzenie przemyślanych, niezawodnych aplikacji dla startupów i firm.",
             "body2": "Moja praca obejmuje aplikacje webowe full-stack, aplikacje mobilne, produkty SaaS i specjalistyczne oprogramowanie. Lubię przekształcać pomysły w coś, z czego ludzie mogą faktycznie korzystać.",
-            "body3": "Koncentruję się na przejrzystych interfejsach, łatwej w utrzymaniu architekturze i rozwiązywaniu problemu, a nie tylko na implementacji listy funkcji."
+            "body3": "Koncentruję się na przejrzystych interfejsach i łatwej w utrzymaniu architekturze, a nie tylko na implementacji listy funkcji."
         },
         "2": {
             "header": "Czym się zajmuję",
@@ -42,7 +42,7 @@
             "database": "Baza danych",
             "mobile": "Mobilny",
             "desktop": "Desktop",
-            "tools": "Narzędzia i infrastruktura",
+            "tools": "Narzędzia",
             "integrations": "Integracje"
         }
     },

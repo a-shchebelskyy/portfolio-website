@@ -30,7 +30,6 @@ const projectsData = [
 const Projects = () => {
 
   const { t } = useTranslation();
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Store the ID of the currently open item (null means all are closed)
   const [openId, setOpenId] = useState(0);
